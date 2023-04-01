@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02cf1102529a54dbfb5b28f6100f58d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 37e32bf013e8cc048b37d28ccf1d6de3, type: 3}
   m_Name: DialogueTwo
   m_EditorClassIdentifier: 
-  text: Hi there neighbour!!!!
+  text: Hi, I'm the Player!
   responses: []
-  karmaScore: 5
-  dialogueAudio: {fileID: 8300000, guid: cc79a358d5f9f4d468733cae9c027cb4, type: 3}
+  karmaScore: 1
+  dialogueAudio: {fileID: 8300000, guid: b7287d7d4544ec24cb99c8ad79c33a01, type: 3}
   character: 0
