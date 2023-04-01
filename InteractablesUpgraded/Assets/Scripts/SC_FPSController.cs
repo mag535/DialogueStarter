@@ -35,8 +35,8 @@ public class SC_FPSController : MonoBehaviour
     void CheckForInteraction()
     {
         // To check if player is looking at an object
-        EvtSystem.EventDispatcher.Raise<EvtSystem.InteractTip>(
-                new EvtSystem.InteractTip {
+        EvtSystem.EventDispatcher.Raise<InteractTip>(
+                new InteractTip {
                     interactPosition = gameObject.transform.position,
                     interactDirection = gameObject.transform.forward,
                     interactDistance = raycastDistance,
@@ -46,8 +46,8 @@ public class SC_FPSController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.E))
         {
             // Raising Player interact event to do interactions and stuff
-            EvtSystem.EventDispatcher.Raise<EvtSystem.PlayerInteract>(
-                new EvtSystem.PlayerInteract {
+            EvtSystem.EventDispatcher.Raise<PlayerInteract>(
+                new PlayerInteract {
                     interactPosition = gameObject.transform.position, 
                     interactDirection = gameObject.transform.forward, 
                     interactDistance = raycastDistance
