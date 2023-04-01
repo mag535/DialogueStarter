@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37e32bf013e8cc048b37d28ccf1d6de3, type: 3}
   m_Name: Bob-Omb_1-2
   m_EditorClassIdentifier: 
-  text: This meadow has become a battlefield ever since the Big Bomb-omb got his
-    paws on the Power Star.
+  text: This meadow has become a battlefield ever since the Big Bob-omb got his paws
+    on the Power Star.
   responses:
   - {fileID: 11400000, guid: e559b6fe9d3ea2f4c97e9440a3b2e594, type: 2}
   karmaScore: 0

@@ -14,7 +14,11 @@ public class AudioManager : Singleton<AudioManager>
 
     private void PlayAudioClip(PlayAudio data)
     {
-        Debug.Log(audioSource.enabled);
+        //Debug.Log(audioSource.enabled);
+        if (data.clipToPlay == null){
+            Debug.Log("data is null...");
+        }
+
         audioSource.Stop();
         if ( audioSource != null )
         {
