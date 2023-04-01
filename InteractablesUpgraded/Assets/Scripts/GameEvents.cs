@@ -6,19 +6,24 @@ using EvtSystem;
 
 
 public class PlayerInteract : EvtSystem.Event
-    {
-        public Vector3 interactPosition;
-        public Vector3 interactDirection;
-        public float interactDistance;
-    }
+{
+    public Vector3 interactPosition;
+    public Vector3 interactDirection;
+    public float interactDistance;
+}
 
-    public class InteractTip : EvtSystem.Event
-    {
-        public Vector3 interactPosition;
-        public Vector3 interactDirection;
-        public float interactDistance;
-        public Vector2 mousePosition;
-    }
+public class InteractTip : EvtSystem.Event
+{
+    public Vector3 interactPosition;
+    public Vector3 interactDirection;
+    public float interactDistance;
+    public Vector2 mousePosition;
+}
+
+public class DialogueStart : EvtSystem.Event
+{
+    public string firstDialogue;
+}
 
 public class ShowDialogueText : EvtSystem.Event
 {

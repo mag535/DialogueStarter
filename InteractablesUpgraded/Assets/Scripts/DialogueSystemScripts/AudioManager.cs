@@ -14,6 +14,7 @@ public class AudioManager : Singleton<AudioManager>
 
     private void PlayAudioClip(PlayAudio data)
     {
+        Debug.Log(audioSource.enabled);
         audioSource.Stop();
         if ( audioSource != null )
         {

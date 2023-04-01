@@ -6,7 +6,8 @@ public enum CharacterID
 {
     PLAYER,
     CHARACTER1,
-    CHARACTER2
+    CHARACTER2,
+    BOB_OMB1
 }
 
 [CreateAssetMenu(menuName = "Dialogue System/Line Data")]

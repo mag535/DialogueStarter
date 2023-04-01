@@ -16,6 +16,8 @@ public class DialogueManager : Singleton<DialogueManager>
     public void Start()
     {
         LoadDatabase();
+
+        EvtSystem.EventDispatcher.AddListener<DialogueStart>(StartDialogue);
     }
 
     public void LoadDatabase()
@@ -26,11 +28,11 @@ public class DialogueManager : Singleton<DialogueManager>
         }
     }
 
-    public void StartDialogue(string dialogueName)
+    public void StartDialogue(DialogueStart eventData)
     {
         DialogueLineData data = null;
 
-        if(dialogueDatabase.TryGetValue(dialogueName, out data))
+        if(dialogueDatabase.TryGetValue(eventData.firstDialogue, out data))
         {
             if (data != currentDialogue)
               StartDialogue(data);
@@ -121,11 +123,6 @@ public class DialogueManager : Singleton<DialogueManager>
                 dialogueWaitTime = 0.0f;
                 CreateResponseMessage();
             }
-        }
-
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            StartDialogue("DialogueOne");
         }
     }
 }
