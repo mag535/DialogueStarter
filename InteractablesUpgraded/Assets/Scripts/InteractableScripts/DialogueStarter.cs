@@ -6,10 +6,6 @@ public class DialogueStarter : Interactable
 {
     public string startOfDialogue;
 
-    public void Start(){
-        // FIXME: add something?
-    }
-
     public override void OnInteract(){
         //Debug.Log("Dialogue Started");
         DialogueStart startTalking = new DialogueStart();
