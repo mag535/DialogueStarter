@@ -16,5 +16,5 @@ MonoBehaviour:
     happened to him\u2026"
   responses: []
   karmaScore: 0
-  dialogueAudio: {fileID: 0}
+  dialogueAudio: {fileID: 8300000, guid: 21ced8d71b43ee74fa4b38d2ca322ce7, type: 3}
   character: 3

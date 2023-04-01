@@ -17,5 +17,5 @@ MonoBehaviour:
   responses:
   - {fileID: 11400000, guid: e559b6fe9d3ea2f4c97e9440a3b2e594, type: 2}
   karmaScore: 0
-  dialogueAudio: {fileID: 0}
+  dialogueAudio: {fileID: 8300000, guid: e7d55f8dfc4693b40ab4408f0fae9727, type: 3}
   character: 3
